@@ -1,0 +1,10 @@
+aiml==0.9.1
+Flask==1.1.1
+Flask-APScheduler==1.11.0
+Flask-Cors==3.0.8
+PyYAML==5.1
+ChatterBot==1.0.5
+chatterbot-corpus==1.2.0
+requests==2.22.0
+
+

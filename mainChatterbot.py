@@ -1,15 +1,15 @@
 from flask import Flask, render_template, request, jsonify
 import aiml
 import os
-#from chatterbot.trainers import ListTrainer
-#from chatterbot import ChatBot
-#from chatterbot.trainers import ChatterBotCorpusTrainer
+from chatterbot.trainers import ListTrainer
+from chatterbot import ChatBot
+from chatterbot.trainers import ChatterBotCorpusTrainer
 import requests
 import json
 
 app = Flask(__name__)
 
-#bot=ChatBot('Test')
+bot=ChatBot('Test')
 # trainer= ListTrainer(bot)
 # for _file in os.listdir('files'):
 # 	chats=open('files/' + _file, 'r').readlines()
@@ -83,8 +83,10 @@ def ask():
 				
 			#exit()
 		else:
+			#bot_response = kernel.respond(message)
 			#bot_response =bot.get_response(message)
-			bot_response = "I dont know"
+			bot_response =bot.get_response(message)
+			
 			print("response is", bot_response)
 			# print bot_response
 			#return jsonify({'status':'OK','answer':bot_response})
