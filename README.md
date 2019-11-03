@@ -24,4 +24,5 @@ AI Based Chatbot
 
 5. You're done and let's chat with your Robot via browser.
 
-
+### [ "env", "FLASK_APP=main.py", "flask", "run" ,"--host", "0.0.0.0"]
+### env FLASK_APP=main.py flask run --host 0.0.0.0
