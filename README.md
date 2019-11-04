@@ -39,6 +39,6 @@ AI Based Chatbot
 
 ### Call chain APIs
 ```/chain```
-```/transctions/new Nick DappsUni 1000
+```/transactions/new Nick DappsUni 1000```
 ```/mine```
 ```/chain```
