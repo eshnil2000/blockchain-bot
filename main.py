@@ -68,7 +68,7 @@ def ask():
 			print(response.json())
 			return jsonify({'status':'OK','answer':json.dumps(response.json())})
 		
-		elif "/transaction/new" in message:
+		elif "/transactions/new" in message:
 			parameters= message.split()
 			print(parameters[1])
 			sender= parameters[1]
