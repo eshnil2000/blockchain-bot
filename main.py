@@ -80,7 +80,7 @@ def ask():
 			}
 			data=json.dumps(make_data(sender,recipient,amount))
 			print(data)
-			response = requests.post('http://1572841083.proxy.chainapp.live/transactions/new', headers=headers, data=data)
+			response = requests.post(API_ENDPOINT+ 'transactions/new', headers=headers, data=data)
 			print(response.json())
 			return jsonify({'status':'OK','answer':json.dumps(response.json())})
 				
