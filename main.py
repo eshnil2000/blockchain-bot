@@ -24,6 +24,8 @@ app = Flask(__name__)
 
 API_ENDPOINT= "http://1572655316.proxy.chainapp.live/"
   
+def make_data(sender,recipient,amount):
+	return {'sender':sender,'recipient': recipient, 'amount': amount }
 
 @app.route("/")
 def hello():
@@ -76,9 +78,10 @@ def ask():
 			    'accept': 'application/json',
 			    'Content-Type': 'application/json',
 			}
-			data = '{ "sender":'+ '"'+ str(sender)+ '"'+ ', "recipient":'+ '"'+ str(recipient)+ '"'+ ',"amount":'+ '"'+ amount+ '"'+ '}'
+			data=json.dumps(make_data(sender,recipient,amount))
 			print(data)
-			response = requests.post('http://1572655316.proxy.chainapp.live/transactions/new', headers=headers, data=data)
+			response = requests.post('http://1572841083.proxy.chainapp.live/transactions/new', headers=headers, data=data)
+			print(response.json())
 			return jsonify({'status':'OK','answer':json.dumps(response.json())})
 				
 			#exit()
