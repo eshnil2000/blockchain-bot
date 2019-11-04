@@ -24,5 +24,10 @@ AI Based Chatbot
 
 5. You're done and let's chat with your Robot via browser.
 
-### [ "env", "FLASK_APP=main.py", "flask", "run" ,"--host", "0.0.0.0"]
-### env FLASK_APP=main.py flask run --host 0.0.0.0
+### within Docker
+```[ "env", "FLASK_APP=main.py", "flask", "run" ,"--host", "0.0.0.0"]```
+### at terminal
+```env FLASK_APP=main.py flask run --host 0.0.0.0```
+
+### at terminal as container
+```docker run -d -e VIRTUAL_HOST=bot.proxy.chainapp.live --net nginx-proxy -t eshnil2000/blockchain-bot```
