@@ -31,3 +31,14 @@ AI Based Chatbot
 
 ### at terminal as container
 ```docker run -d -e VIRTUAL_HOST=bot.proxy.chainapp.live --net nginx-proxy -t eshnil2000/blockchain-bot```
+
+### configure chain address
+```
+@chain http://1572844919.proxy.chainapp.live/
+```
+
+### Call chain APIs
+```/chain```
+```/transctions/new Nick DappsUni 1000
+```/mine```
+```/chain```
