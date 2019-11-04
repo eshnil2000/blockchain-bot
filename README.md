@@ -43,5 +43,5 @@ AI Based Chatbot
 ```/transactions/new Nick DappsUni 1000```
 ### mine
 ```/mine```
-###get chain info
+### get chain info
 ```/chain```
