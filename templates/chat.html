@@ -120,10 +120,10 @@
                 e.preventDefault();
 
                 var onAnythingSaid = function (text) {
-                    console.log('Interim text: ', text);
+                    //console.log('Interim text: ', text);
                 };
                 var onFinalised = function (text) {
-                    console.log('Finalised text: ', text);
+                    //console.log('Finalised text: ', text);
                     $('#messageText').val(text);
                 };
                 var onFinishedListening = function () {
@@ -162,15 +162,15 @@
                         $(".fixed-panel").stop().animate({ scrollTop: $(".fixed-panel")[0].scrollHeight}, 1000);
                         
                         msg.text = answer;
-                        console.log(msg.text);
+                        //console.log(msg.text);
                         var msg_short=msg.text.slice(0,50);
                         msg.text = msg_short;
-                        console.log(msg_short);
+                        //console.log(msg_short);
                         
                         speechSynthesis.speak(msg);
                     },
                     error: function(error) {
-                        console.log(error);
+                        //console.log(error);
                     }
                 });
             });
