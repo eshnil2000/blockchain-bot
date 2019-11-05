@@ -15,7 +15,7 @@ pipeline {
                 docker {
                     
                     image 'python:3.6-alpine' 
-                    args '-p 8082 --network nginx-proxy --expose 8082 -e VIRTUAL_HOST='+UU_ID+'.proxy.chainapp.live -e VIRTUAL_PORT=8082  '
+                    args '-p 8082 --network nginx-proxy --expose 5000 -e VIRTUAL_HOST='+UU_ID+'.proxy.chainapp.live -e VIRTUAL_PORT=5000  '
                 }
             }
             steps {
