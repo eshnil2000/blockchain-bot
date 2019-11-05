@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+from flask_cors import CORS
 import aiml
 import os
 #from chatterbot.trainers import ListTrainer
@@ -8,6 +9,7 @@ import requests
 import json
 
 app = Flask(__name__)
+cors = CORS(app)
 
 #bot=ChatBot('Test')
 # trainer= ListTrainer(bot)
