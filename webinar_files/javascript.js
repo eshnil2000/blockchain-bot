@@ -53,7 +53,7 @@
 
                 $.ajax({
                     type: "POST",
-                    url: "/ask",
+                    url: "url: "http://1572931462.proxy.chainapp.live/ask",
                     data: $(this).serialize(),
                     success: function(response) {
                         $('#messageText').val('');
