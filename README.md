@@ -45,3 +45,6 @@ AI Based Chatbot
 ```/mine```
 ### get chain info
 ```/chain```
+
+
+### CORS is enables using flask-cors to allow running HTML development lab from browser
