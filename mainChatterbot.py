@@ -78,7 +78,7 @@ def ask():
 			}
 			data = '{ "sender":'+ '"'+ str(sender)+ '"'+ ', "recipient":'+ '"'+ str(recipient)+ '"'+ ',"amount":'+ '"'+ amount+ '"'+ '}'
 			print(data)
-			response = requests.post('http://1572655316.proxy.chainapp.live/transactions/new', headers=headers, data=data)
+			response = requests.post(API_ENDPOINT+ 'transactions/new', headers=headers, data=data)
 			return jsonify({'status':'OK','answer':json.dumps(response.json())})
 				
 			#exit()
