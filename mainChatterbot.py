@@ -10,11 +10,11 @@ import json
 app = Flask(__name__)
 
 bot=ChatBot('Test')
-# trainer= ListTrainer(bot)
-# for _file in os.listdir('files'):
-# 	chats=open('files/' + _file, 'r').readlines()
-# 	print(chats)
-# 	trainer.train(chats)
+ trainer= ListTrainer(bot)
+ for _file in os.listdir('files'):
+ 	chats=open('files/' + _file, 'r').readlines()
+ 	print(chats)
+ 	trainer.train(chats)
 
 #trainer = ChatterBotCorpusTrainer(bot)
 #trainer.train(
